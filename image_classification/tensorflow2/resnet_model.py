@@ -72,10 +72,12 @@ def change_keras_layer(use_tf_keras_layers=False):
       use_tf_keras_layers: whether to use tf.keras.layers.
   """
   global layers
+  use_tf_keral_layers=True
   if use_tf_keras_layers:
     layers = tf.keras.layers
   else:
-    layers = tf_python_keras_layers
+    layers = tf.keras.layers
+    #layers = tf_python_keras_layers
 
 
 def _gen_l2_regularizer(use_l2_regularizer=True):
